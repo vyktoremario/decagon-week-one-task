@@ -1,0 +1,107 @@
+*,
+*::before,
+*::after,
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ccc;
+}
+
+img {
+  width: 100%;
+  height: 90%;
+  display: block;
+}
+
+h3,
+h4 {
+  text-align: center;
+  padding: 10px;
+  font-size: medium;
+}
+
+span {
+  text-align: center;
+  color: aliceblue;
+}
+
+.logo {
+  width: 90px;
+  height: 90px;
+}
+
+.header {
+  padding-top: 5px;
+  height: 120px;
+  width: 100vw;
+  background-color: black;
+}
+
+#gridLine {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px 20px;
+}
+div.cell {
+  background: #fff;
+  padding: 6px;
+}
+
+.hidden {
+  display: none;
+}
+
+.divWidth {
+  width: 200px;
+  height: 100px;
+}
+
+.box {
+  background: #fff;
+  width: 400px;
+  height: 300px;
+  margin: 40px auto;
+}
+
+.effect {
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+.effect:before,
+.effect:after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 25px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width: 300px;
+  background: #777;
+  -webkit-box-shadow: 0 35px 20px #777;
+  -moz-box-shadow: 0 35px 20px #777;
+  box-shadow: 0 35px 20px #777;
+  -webkit-transform: rotate(-8deg);
+  -moz-transform: rotate(-8deg);
+  -o-transform: rotate(-8deg);
+  -ms-transform: rotate(-8deg);
+  transform: rotate(-8deg);
+}
+.effect:after {
+  -webkit-transform: rotate(8deg);
+  -moz-transform: rotate(8deg);
+  -o-transform: rotate(8deg);
+  -ms-transform: rotate(8deg);
+  transform: rotate(8deg);
+  right: 10px;
+  left: auto;
+}
